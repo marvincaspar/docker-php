@@ -9,6 +9,7 @@ RUN \
   libcurl4-gnutls-dev \
   libssl-dev \
   libmcrypt-dev \
+  libgd-dev \
   git \
   curl \
   wget
@@ -21,6 +22,7 @@ RUN /usr/local/bin/docker-php-ext-install \
     mbstring \
     mcrypt \
     hash \
+    gd \
     json
 
 # Make sure the volume mount point is empty

@@ -22,9 +22,11 @@ RUN /usr/local/bin/docker-php-ext-install \
     mbstring \
     mcrypt \
     hash \
-    gd \
     json
 
+RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-jpeg-dir=/usr --with-png-dir=/usr \
+    && docker-php-ext-install gd
+    
 # Make sure the volume mount point is empty
 RUN rm -rf /var/www/html/*
 

@@ -1,4 +1,4 @@
-FROM mc388/php:lastest
+FROM mc388/php:latest
 MAINTAINER Marvin Caspar <info@marvincaspar.de>
 
 RUN version=$(php -r "echo PHP_MAJOR_VERSION.PHP_MINOR_VERSION;") \

@@ -1,4 +1,4 @@
-FROM mc388/php
+FROM mc388/php:lastest
 MAINTAINER Marvin Caspar <info@marvincaspar.de>
 
 # Install xdebug

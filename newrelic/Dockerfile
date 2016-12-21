@@ -9,5 +9,8 @@ RUN apt-get update && \
 
 RUN apt-get update && \
     apt-get -yq install newrelic-php5 && \
+    export NR_INSTALL_SILENT=1 && \
+    export NR_INSTALL_USE_CP_NOT_LN=1 && \
+    export NR_INSTALL_PHPLIST='/usr/local/bin' && \
     newrelic-install install && \
     apt-get purge -y --auto-remove

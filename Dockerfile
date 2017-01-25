@@ -9,6 +9,7 @@ RUN apt-get update && \
         libjpeg-dev \
         libmcrypt-dev \
         libxml2-dev \
+        libgd-dev \
         freetype* \
         git \
         zlib1g-dev \

@@ -31,6 +31,7 @@ RUN docker-php-ext-configure \
     pdo \
     pdo_mysql \
     soap \
+    sockets \
     zip \
     intl
 

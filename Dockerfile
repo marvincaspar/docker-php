@@ -25,7 +25,6 @@ RUN docker-php-ext-configure \
     docker-php-ext-install \
     gd \
     mbstring \
-    mcrypt \
     mysqli \
     opcache \
     pdo \

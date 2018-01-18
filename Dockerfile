@@ -5,7 +5,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS --enable-fpm --with-fpm-user=www-data --with-fpm-gr
 
 RUN apt-get update && \
     apt-get install -y \
-        libpng12-dev \
+        libpng-dev \
         libjpeg-dev \
         libmcrypt-dev \
         libxml2-dev \
